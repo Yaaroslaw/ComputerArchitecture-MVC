@@ -5,18 +5,18 @@ year = {}
 
 
 class Rule:
-    def add_day(pressure, temperature, wind, month, number):
+    def add_day(self, pressure, temperature, wind, month, number):
         year[month].append(Day(pressure, temperature, wind, number))
 
-    def del_day(month, number):
+    def del_day(self, month, number):
         for i in year[month]:
             if i.number == number:
                 year[month].remove(i)
 
-    def add_month(name):
+    def add_month(self, name):
         year[name] = []
 
-    def del_month(name):
+    def del_month(self, name):
         del year[name]
 
     def show_month(self):  # виведення на екран інформації про місяці та дні
@@ -25,7 +25,9 @@ class Rule:
         month = input("Enter the month ")
         # check
         for i in year[month]:
-            print("Number: {}, Pressure: {}, Wind: {}, Temperature: {}".format(i.number, i.pressure, i.wind, i. temperature))
+            # print("Number: {}, Pressure: {}, Wind: {}, Temperature: {}".format(i.number, i.pressure, i.wind, i. temperature))
+            print(i)
+
 
     def initial_values(self):
         year["February"] = []

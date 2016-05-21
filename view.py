@@ -14,7 +14,6 @@ class View:
         print(" 4.Delete day")
         print(" 5.Delete month")
         print(" 6.Exit")
-        #???
         View.choose(self)
         View.want_cont(self)
 
@@ -42,15 +41,15 @@ class View:
 
         n = input("Your choice: ")
         if n == "1":
-            Rule.show_month(self)
+            Rule.show_month(Rule())
         elif n == "2":
-            Controller.add_day_param(self)
+            Controller.add_day_param(Controller())
         elif n == "3":
-            Controller.add_del_month_param(1)
+            Controller.add_del_month_param(Controller(), 1)
         elif n == "4":
-            Controller.del_day_param(self)
+            Controller.del_day_param(Controller())
         elif n == "5":
-            Controller.add_del_month_param(2)
+            Controller.add_del_month_param(Controller(), 2)
         elif n == "6":
             exit()
 
@@ -75,5 +74,5 @@ class View:
         else:
             exit()
 
-Rule.initial_values(self)
-View.menu(self)
+Rule.initial_values(Rule())
+View.menu(View())
