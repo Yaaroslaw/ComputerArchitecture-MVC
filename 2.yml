@@ -1,0 +1,2 @@
+July:
+- !!python/object:model.Day {number: '1', pressure: '20', temperature: '20', wind: '20'}

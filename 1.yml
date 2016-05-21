@@ -1,0 +1,5 @@
+February:
+- !!python/object:model.Day {number: 25, pressure: 702, temperature: 1, wind: 8}
+- !!python/object:model.Day {number: 26, pressure: 740, temperature: -3, wind: 18}
+- !!python/object:model.Day {number: 27, pressure: 797, temperature: 2, wind: 24}
+- !!python/object:model.Day {number: 28, pressure: 773, temperature: 8, wind: 14}
