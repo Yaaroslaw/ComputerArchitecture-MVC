@@ -3,6 +3,7 @@ from model import *
 
 year = {}
 
+
 class Rule:
     def add_day(pressure, temperature, wind, month, number):
         year[month].append(Day(pressure, temperature, wind, number))
