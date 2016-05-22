@@ -5,7 +5,8 @@ year = {}
 
 
 class Rule:
-    def add_day(self, pressure, temperature, wind, month, number):
+    # @staticmethod
+    def add_day(self,pressure, temperature, wind, month, number):
         year[month].append(Day(pressure, temperature, wind, number))
 
     def del_day(self, month, number):
@@ -29,10 +30,6 @@ class Rule:
             print(i)
 
 
-    def initial_values(self):
-        year["February"] = []
-        for i in range(25, 29):
-            x = randint(684, 809)
-            y = randint(-9, 10)
-            z = randint(1, 30)
-            year["February"].append(Day(x, y, z, i))
+    def initial_values(self, name):
+        year[name] = []
+        year[name].append(Day(1, 650, 20, 25))
