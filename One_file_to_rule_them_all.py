@@ -14,6 +14,7 @@ class Rule:
             if i.number == number:
                 year[month].remove(i)
 
+
     def add_month(self, name):
         year[name] = []
 

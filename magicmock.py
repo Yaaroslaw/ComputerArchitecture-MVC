@@ -16,6 +16,14 @@ test.add_month(0)
 test.del_day = mock.MagicMock()
 test.del_day(0,0)
 
+
+# test.initial_values = mock.MagicMock()
+# test.initial_values.assert_call_once_with('February')
+# result = Rule.initial_values(Rule(), 'February')
+# assert result == 25
+# print(result)
+
+
 test.del_month = mock.MagicMock()
 test.del_month(0)
 
@@ -25,11 +33,6 @@ test.show_month()
 
 
 
-# test.initial_values = mock.MagicMock()
-# test.initial_values.assert_call_once_with('February')
-# result = Rule.initial_values(Rule(), 'February')
-# assert result == 25
-# print(result)
 
 # a = Day(0, 0, 0, 0)
 #

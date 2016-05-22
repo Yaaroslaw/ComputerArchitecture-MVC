@@ -74,5 +74,6 @@ class View:
         else:
             exit()
 
+
 Rule.initial_values(Rule(), 'February')
 View.menu(View())
