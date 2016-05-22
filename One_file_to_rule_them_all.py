@@ -30,7 +30,6 @@ class Rule:
             # print("Number: {}, Pressure: {}, Wind: {}, Temperature: {}".format(i.number, i.pressure, i.wind, i. temperature))
             print(i)
 
-
     def initial_values(self, name):
         year[name] = []
         year[name].append(Day(1, 650, 20, 25))

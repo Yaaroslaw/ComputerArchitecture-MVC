@@ -10,7 +10,6 @@ class Controller:
         elif n == 2:
             Rule.del_month(self, name)
 
-
     def add_day_param(self):  # Додавання днів
         month = input("Enter the month ")
         # check month
@@ -19,7 +18,6 @@ class Controller:
         temperature = input("Enter the temperature ")
         wind = input("Enter the wind ")
         Rule.add_day(self,pressure, temperature, wind, month, number)
-
 
     def del_day_param(self):  # видалення днів
         month = input("Enter the month ")
